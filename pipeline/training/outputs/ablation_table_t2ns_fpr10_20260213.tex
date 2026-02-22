@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\caption{Ablation Study: Feature Set Comparison}
+\label{tab:ablation}
+\small
+\begin{tabular}{llcccccc}
+\toprule
+Feature Set & $n$ & AUC & PR-AUC & Recall\% & Cost\% & $\Delta$Recall & $\Delta$Cost \\
+\midrule
+\multicolumn{8}{l}{\textbf{Cross-pocket}} \\
+  \textbf{F5_struct_energy} & 5 & 0.707 & 0.771 & 23.9 & 16.9 & --- & --- \\
+  F4_struct & 4 & 0.719 & 0.750 & 13.0 & 11.2 & -10.9 & -5.6 \\
+  LOFO_no_energy_std & 4 & 0.719 & 0.750 & 13.0 & 11.2 & -10.9 & -5.6 \\
+  LOFO_no_mean_disp & 4 & 0.701 & 0.761 & 21.7 & 15.7 & -2.2 & -1.1 \\
+  LOFO_no_rmsd_var & 4 & 0.694 & 0.742 & 15.2 & 11.2 & -8.7 & -5.6 \\
+  LOFO_no_slope & 4 & 0.713 & 0.775 & 21.7 & 15.7 & -2.2 & -1.1 \\
+  LOFO_no_var_disp & 4 & 0.687 & 0.735 & 15.2 & 12.4 & -8.7 & -4.5 \\
+  F1_energy & 1 & 0.517 & 0.620 & 4.3 & 4.5 & -19.6 & -12.4 \\
+  SINGLE_mean_disp & 1 & 0.573 & 0.669 & 17.4 & 12.4 & -6.5 & -4.5 \\
+  SINGLE_rmsd_var & 1 & 0.703 & 0.749 & 8.7 & 6.7 & -15.2 & -10.1 \\
+  SINGLE_slope & 1 & 0.683 & 0.741 & 13.0 & 10.1 & -10.9 & -6.7 \\
+  SINGLE_var_disp & 1 & 0.635 & 0.693 & 10.9 & 7.9 & -13.0 & -9.0 \\
+\midrule
+\multicolumn{8}{l}{\textbf{Cross-protein}} \\
+  \textbf{F5_struct_energy} & 5 & 0.607 & 0.753 & 15.2 & 12.4 & --- & --- \\
+  F4_struct & 4 & 0.595 & 0.741 & 15.2 & 12.4 & +0.0 & +0.0 \\
+  LOFO_no_energy_std & 4 & 0.595 & 0.741 & 15.2 & 12.4 & +0.0 & +0.0 \\
+  LOFO_no_mean_disp & 4 & 0.624 & 0.772 & 21.7 & 16.9 & +6.5 & +4.5 \\
+  LOFO_no_rmsd_var & 4 & 0.651 & 0.775 & 15.2 & 12.4 & +0.0 & +0.0 \\
+  LOFO_no_slope & 4 & 0.597 & 0.730 & 19.6 & 15.7 & +4.3 & +3.4 \\
+  LOFO_no_var_disp & 4 & 0.628 & 0.743 & 10.9 & 11.2 & -4.3 & -1.1 \\
+  F1_energy & 1 & 0.418 & 0.667 & 0.0 & 4.5 & -15.2 & -7.9 \\
+  SINGLE_mean_disp & 1 & 0.592 & 0.725 & 15.2 & 12.4 & +0.0 & +0.0 \\
+  SINGLE_rmsd_var & 1 & 0.637 & 0.771 & 8.7 & 6.7 & -6.5 & -5.6 \\
+  SINGLE_slope & 1 & 0.676 & 0.806 & 17.4 & 12.4 & +2.2 & +0.0 \\
+  SINGLE_var_disp & 1 & 0.606 & 0.754 & 13.0 & 10.1 & -2.2 & -2.2 \\
+\midrule
+\bottomrule
+\end{tabular}
+\end{table}

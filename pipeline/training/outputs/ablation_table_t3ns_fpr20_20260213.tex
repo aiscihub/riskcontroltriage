@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\caption{Ablation Study: Feature Set Comparison}
+\label{tab:ablation}
+\small
+\begin{tabular}{llcccccc}
+\toprule
+Feature Set & $n$ & AUC & PR-AUC & Recall\% & Cost\% & $\Delta$Recall & $\Delta$Cost \\
+\midrule
+\multicolumn{8}{l}{\textbf{Cross-pocket}} \\
+  \textbf{F5_struct_energy} & 5 & 0.682 & 0.751 & 45.7 & 31.9 & --- & --- \\
+  F4_struct & 4 & 0.701 & 0.734 & 41.3 & 28.7 & -4.3 & -3.2 \\
+  LOFO_no_energy_std & 4 & 0.701 & 0.734 & 41.3 & 28.7 & -4.3 & -3.2 \\
+  LOFO_no_mean_disp & 4 & 0.702 & 0.759 & 52.2 & 36.1 & +6.5 & +4.2 \\
+  LOFO_no_rmsd_var & 4 & 0.639 & 0.726 & 34.8 & 25.5 & -10.9 & -6.4 \\
+  LOFO_no_slope & 4 & 0.705 & 0.766 & 47.8 & 31.9 & +2.2 & +0.0 \\
+  LOFO_no_var_disp & 4 & 0.674 & 0.714 & 37.0 & 25.5 & -8.7 & -6.4 \\
+  F1_energy & 1 & 0.545 & 0.663 & 21.7 & 18.1 & -23.9 & -13.8 \\
+  SINGLE_mean_disp & 1 & 0.595 & 0.700 & 28.3 & 20.2 & -17.4 & -11.7 \\
+  SINGLE_rmsd_var & 1 & 0.691 & 0.727 & 37.0 & 26.6 & -8.7 & -5.3 \\
+  SINGLE_slope & 1 & 0.657 & 0.751 & 23.9 & 18.1 & -21.7 & -13.8 \\
+  SINGLE_var_disp & 1 & 0.646 & 0.724 & 19.6 & 15.9 & -26.1 & -15.9 \\
+\midrule
+\multicolumn{8}{l}{\textbf{Cross-protein}} \\
+  \textbf{F5_struct_energy} & 5 & 0.648 & 0.736 & 43.5 & 32.9 & --- & --- \\
+  F4_struct & 4 & 0.732 & 0.799 & 41.3 & 28.7 & -2.2 & -4.2 \\
+  LOFO_no_energy_std & 4 & 0.732 & 0.799 & 41.3 & 28.7 & -2.2 & -4.2 \\
+  LOFO_no_mean_disp & 4 & 0.715 & 0.763 & 45.7 & 31.9 & +2.2 & -1.1 \\
+  LOFO_no_rmsd_var & 4 & 0.578 & 0.719 & 37.0 & 27.6 & -6.5 & -5.3 \\
+  LOFO_no_slope & 4 & 0.616 & 0.708 & 41.3 & 31.9 & -2.2 & -1.1 \\
+  LOFO_no_var_disp & 4 & 0.628 & 0.737 & 39.1 & 27.6 & -4.3 & -5.3 \\
+  F1_energy & 1 & 0.462 & 0.685 & 15.2 & 14.9 & -28.3 & -18.1 \\
+  SINGLE_mean_disp & 1 & 0.601 & 0.726 & 28.3 & 20.2 & -15.2 & -12.7 \\
+  SINGLE_rmsd_var & 1 & 0.639 & 0.755 & 32.6 & 24.4 & -10.9 & -8.5 \\
+  SINGLE_slope & 1 & 0.620 & 0.779 & 26.1 & 19.1 & -17.4 & -13.8 \\
+  SINGLE_var_disp & 1 & 0.610 & 0.755 & 23.9 & 18.1 & -19.6 & -14.9 \\
+\midrule
+\bottomrule
+\end{tabular}
+\end{table}
